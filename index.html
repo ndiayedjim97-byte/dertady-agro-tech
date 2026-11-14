@@ -1,371 +1,376 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dertady Agro Tech | Agriculture Moderne & Production Agricole</title>
+    <title>Dertady Agro Tech | Agriculture Moderne, Maraîchage & Élevage au Sénégal</title>
+    <meta name="description" content="Dertady Agro Tech : Production agricole moderne au Sénégal (Maïs, Gombo, Pastèque, Tomate, Oignon, Chou, Piment, Pomme de terre) et élevage intégré.">
     
-    <!-- Balises SEO & Partage Réseaux Sociaux (Aperçu WhatsApp) -->
-    <meta name="description" content="Dertady Agro Tech - Production agricole moderne au Sénégal : Maïs grain, Gombo frais et Pastèques. Vente en gros et détail.">
-    <meta property="og:title" content="Dertady Agro Tech | Agriculture Moderne & Production Agricole">
-    <meta property="og:description" content="Découvrez nos récoltes de maïs, gombo frais et pastèques cultivées avec rigueur par Djim Ndiaye et Papa Ndiobo Ndiaye.">
+    <!-- Open Graph / Partage WhatsApp & Réseaux Sociaux -->
+    <meta property="og:title" content="Dertady Agro Tech | Agriculture & Élevage au Sénégal">
+    <meta property="og:description" content="Productions maraîchères, grandes cultures et élevage durable. Découvrez notre exploitation dirigée par Djim Ndiaye et Papa Ndiobo Ndiaye.">
+    <meta property="og:image" content="https://ndiayedjim97-byte.github.io/dertady-agro-tech/images.jfif">
+    <meta property="og:url" content="https://ndiayedjim97-byte.github.io/dertady-agro-tech/">
     <meta property="og:type" content="website">
-    
-    <!-- Favicon (Icône dans l'onglet du navigateur) -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23059669'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white'>🌱</text></svg>">
 
-    <!-- Tailwind CSS pour un design ultra moderne -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome pour les icônes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
-        body { 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            scroll-behavior: smooth;
-        }
-        ::selection {
-            background-color: #10b981;
-            color: #ffffff;
-        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased relative">
+<body class="bg-stone-50 text-stone-800 antialiased">
 
-    <!-- HEADER / NAVIGATION -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <div class="w-12 h-12 rounded-2xl bg-emerald-600 flex items-center justify-center text-white shadow-lg shadow-emerald-600/30">
-                    <i class="fa-solid fa-seedling text-2xl"></i>
+    <!-- Navigation -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-emerald-700 text-white flex items-center justify-center font-extrabold text-xl shadow-sm">
+                    D
                 </div>
                 <div>
-                    <h1 class="text-xl font-extrabold tracking-tight text-slate-900">DERTADY <span class="text-emerald-600">AGRO TECH</span></h1>
-                    <p class="text-xs font-medium text-slate-500">Innovation & Production Agricole</p>
+                    <span class="font-extrabold text-xl tracking-tight text-emerald-950 block leading-none">Dertady Agro Tech</span>
+                    <span class="text-xs font-medium text-emerald-700">Agriculture & Élevage Intégré</span>
                 </div>
-            </div>
-            
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
-                <a href="#accueil" class="hover:text-emerald-600 transition">Accueil</a>
-                <a href="#engagements" class="hover:text-emerald-600 transition">Savoir-Faire</a>
-                <a href="#produits" class="hover:text-emerald-600 transition">Nos Récoltes</a>
-                <a href="#galerie" class="hover:text-emerald-600 transition">Nos Terres</a>
-                <a href="#actionnaires" class="hover:text-emerald-600 transition">Fondateurs</a>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-stone-600">
+                <a href="#productions" class="hover:text-emerald-700 transition">Nos Productions</a>
+                <a href="#maraichage" class="hover:text-emerald-700 transition">Maraîchage</a>
+                <a href="#elevage" class="hover:text-emerald-700 transition">Élevage</a>
+                <a href="#savoir-faire" class="hover:text-emerald-700 transition">Savoir-Faire</a>
+                <a href="#equipe" class="hover:text-emerald-700 transition">Direction</a>
             </nav>
 
-            <div>
-                <button onclick="openOrderModal('Contact Rapide')" class="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-md transition">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>Nous Contacter</span>
-                </button>
-            </div>
+            <a href="https://wa.me/221773949112?text=Bonjour%20Dertady%20Agro%20Tech,%20je%20souhaite%20avoir%20des%20informations%20sur%20vos%20productions." 
+               target="_blank" 
+               class="inline-flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition shadow-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Commander</span>
+            </a>
         </div>
     </header>
 
-    <!-- HERO SECTION AVEC IMAGE DE FOND -->
-    <section id="accueil" class="relative overflow-hidden bg-emerald-950 text-white py-24 lg:py-32">
+    <!-- Section Héro -->
+    <section class="relative bg-emerald-950 text-white overflow-hidden">
         <div class="absolute inset-0 opacity-25">
-            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=1920" alt="Champ agricole Dertady Agro Tech" class="w-full h-full object-cover">
+            <img src="images.jfif" alt="Champs Dertady Agro Tech" class="w-full h-full object-cover">
         </div>
-        <div class="absolute inset-0 bg-gradient-to-r from-emerald-950 via-emerald-950/90 to-emerald-950/70"></div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl">
-            <span class="inline-flex items-center space-x-2 bg-emerald-800/80 border border-emerald-700 text-emerald-200 text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-6 shadow-sm">
-                <i class="fa-solid fa-circle-check text-emerald-400"></i>
-                <span>Campagne Agricole Active • Sénégal</span>
-            </span>
-            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                Cultiver l'Excellence, <br>Nourrir l'Avenir.
-            </h2>
-            <p class="text-lg text-emerald-100 mb-10 font-normal">
-                Dertady Agro Tech exploite des terres fertiles pour produire du maïs de qualité, du gombo frais au quotidien et des pastèques saines. Commandez directement nos récoltes en gros ou en détail.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#produits" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-xl transition">
-                    Découvrir nos Récoltes
-                </a>
-                <button onclick="openOrderModal('Demande de Devis / Partenariat')" class="w-full sm:w-auto bg-emerald-900/80 hover:bg-emerald-900 text-white font-semibold border border-emerald-600/50 px-8 py-4 rounded-xl transition">
-                    Prendre Contact
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION ENGAGEMENTS & LOGISTIQUE -->
-    <section id="engagements" class="py-16 bg-white border-b border-slate-200/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Point 1 -->
-                <div class="flex items-start space-x-4 p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl shrink-0">
-                        <i class="fa-solid fa-tractor"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-slate-900 text-lg">Production Directe</h3>
-                        <p class="text-sm text-slate-600 mt-1">Sans intermédiaire : nos récoltes proviennent directement de nos parcelles exploitées et suivies sur le terrain.</p>
-                    </div>
-                </div>
-                <!-- Point 2 -->
-                <div class="flex items-start space-x-4 p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl shrink-0">
-                        <i class="fa-solid fa-boxes-stacked"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-slate-900 text-lg">Gros & Détail</h3>
-                        <p class="text-sm text-slate-600 mt-1">Capacité d'approvisionnement adaptée aux marchés, restaurants, grossistes et particuliers selon la saison.</p>
-                    </div>
-                </div>
-                <!-- Point 3 -->
-                <div class="flex items-start space-x-4 p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-xl shrink-0">
-                        <i class="fa-solid fa-truck-fast"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-slate-900 text-lg">Logistique & Retrait</h3>
-                        <p class="text-sm text-slate-600 mt-1">Enlèvement direct sur site ou organisation de l'acheminement rapide vers vos points de vente.</p>
-                    </div>
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+            <div class="max-w-3xl">
+                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-800/80 border border-emerald-600/50 text-emerald-200 text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i class="fa-solid fa-seedling"></i> Exploitation Agricole & Élevage au Sénégal
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Cultiver l'excellence, nourrir durablement.
+                </h1>
+                <p class="text-lg md:text-xl text-emerald-100/90 leading-relaxed mb-10">
+                    De nos grandes cultures (maïs, pastèque, gombo) à nos pépinières maraîchères de haute précision (tomate, oignon, chou, piment, pomme de terre) jusqu'à l'élevage intégré, <strong>Dertady Agro Tech</strong> allie rigueur technique et respect de la terre.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#productions" class="bg-amber-500 hover:bg-amber-400 text-emerald-950 font-bold px-7 py-3.5 rounded-full transition shadow-lg">
+                        Découvrir nos récoltes
+                    </a>
+                    <a href="https://wa.me/221773949112" target="_blank" class="bg-white/10 hover:bg-white/20 border border-white/25 text-white font-semibold px-7 py-3.5 rounded-full transition">
+                        Contacter l'exploitation
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION CATALOGUE PRODUITS -->
-    <section id="produits" class="py-20 bg-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-extrabold text-slate-900">Nos Spéculations Agricoles</h2>
-                <p class="text-slate-600 mt-2">Des produits cultivés avec soin et rigueur, disponibles selon les saisons.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Maïs (images.jfif) -->
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <div class="w-full h-52 overflow-hidden bg-slate-200">
-                            <img src="images.jfif" alt="Maïs Grain" class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="p-8 pb-0">
-                            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">Récolte Disponible</span>
-                            <h3 class="text-2xl font-bold text-slate-900 mt-4">Maïs Grain</h3>
-                            <p class="text-slate-600 text-sm mt-2">
-                                Maïs récolté et conditionné en sacs de qualité supérieure. Idéal pour la consommation ou l'agro-industrie.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-8">
-                        <button onclick="openOrderModal('Maïs Grain')" class="w-full bg-slate-900 hover:bg-emerald-600 text-white font-semibold py-3.5 rounded-xl transition flex items-center justify-center space-x-2">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Commander / Demander</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Gombo (A5.jpg) -->
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <div class="w-full h-52 overflow-hidden bg-slate-200">
-                            <img src="A5.jpg" alt="Gombo Frais" class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="p-8 pb-0">
-                            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">Cueillette Quotidienne</span>
-                            <h3 class="text-2xl font-bold text-slate-900 mt-4">Gombo Frais</h3>
-                            <p class="text-slate-600 text-sm mt-2">
-                                Gombo frais récolté à maturité optimale. Vente en gros ou au détail selon arrivage et stock disponible.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-8">
-                        <button onclick="openOrderModal('Gombo Frais')" class="w-full bg-slate-900 hover:bg-emerald-600 text-white font-semibold py-3.5 rounded-xl transition flex items-center justify-center space-x-2">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Commander / Demander</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Pastèque (images (1).jfif) -->
-                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <div class="w-full h-52 overflow-hidden bg-slate-200">
-                            <img src="images (1).jfif" alt="Pastèque" class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="p-8 pb-0">
-                            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">En Culture / Pré-commande</span>
-                            <h3 class="text-2xl font-bold text-slate-900 mt-4">Pastèque</h3>
-                            <p class="text-slate-600 text-sm mt-2">
-                                Nouvelle campagne en cours de développement avec un investissement technique de pointe pour des fruits sucrés et juteux.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-8">
-                        <button onclick="openOrderModal('Pastèque')" class="w-full bg-slate-900 hover:bg-emerald-600 text-white font-semibold py-3.5 rounded-xl transition flex items-center justify-center space-x-2">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Réserver / Demander</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+    <!-- Section 1 : Grandes Cultures & Récoltes Phares (Avec vos photos actuelles) -->
+    <section id="productions" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-emerald-700 font-bold text-sm uppercase tracking-wider">Nos Cultures Phares</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-stone-900 mt-2">Des récoltes fraîches et maîtrisées</h2>
+            <p class="text-stone-600 mt-3">Suivi agronomique rigoureux du semis à la récolte pour approvisionner les marchés, grossistes et particuliers.</p>
         </div>
-    </section>
 
-    <!-- SECTION GALERIE TERRAIN (NOS TERRES EN IMAGES) -->
-    <section id="galerie" class="py-20 bg-white border-b border-slate-200/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-emerald-600 font-bold text-xs uppercase tracking-wider">Transparence & Qualité</span>
-                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Nos Terres en Images</h2>
-                <p class="text-slate-600 mt-2">Aperçu de nos parcelles, de l'irrigation et du suivi rigoureux des cultures.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="rounded-3xl overflow-hidden h-64 shadow-sm group relative">
-                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80&w=800" alt="Préparation des sols" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent flex items-end p-6">
-                        <p class="text-white font-semibold text-sm">Travail et préparation des terres fertiles</p>
-                    </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Carte Maïs -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-md transition">
+                <div class="h-60 overflow-hidden bg-stone-100">
+                    <img src="images.jfif" alt="Culture de Maïs Dertady Agro Tech" class="w-full h-full object-cover hover:scale-105 transition duration-500">
                 </div>
-                <div class="rounded-3xl overflow-hidden h-64 shadow-sm group relative">
-                    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&q=80&w=800" alt="Irrigation moderne" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent flex items-end p-6">
-                        <p class="text-white font-semibold text-sm">Maîtrise de l'eau et suivi agronomique</p>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-stone-900">Maïs</h3>
+                        <span class="text-xs font-semibold bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full">Grande Culture</span>
                     </div>
-                </div>
-                <div class="rounded-3xl overflow-hidden h-64 shadow-sm group relative">
-                    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80&w=800" alt="Récolte fraîche" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent flex items-end p-6">
-                        <p class="text-white font-semibold text-sm">Récoltes fraîches prêtes pour la distribution</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION ACTIONNAIRES / FONDATEURS -->
-    <section id="actionnaires" class="py-20 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-extrabold text-slate-900">Leadership & Direction</h2>
-                <p class="text-slate-600 mt-2">Les co-fondateurs et actionnaires engagés dans le développement de Dertady Agro Tech.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <!-- Djim Ndiaye (djim.jfif) -->
-                <div class="bg-white border border-slate-200/80 rounded-3xl p-8 text-center shadow-sm hover:shadow-md transition">
-                    <div class="w-28 h-28 rounded-full overflow-hidden mx-auto mb-6 shadow-md border-4 border-emerald-50 bg-slate-200">
-                        <img src="djim.jfif" alt="Djim Ndiaye" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900">Djim Ndiaye</h3>
-                    <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mt-2">Co-fondateur & Actionnaire</span>
-                    <p class="text-slate-600 text-sm mt-4">
-                        Pilote la vision stratégique, la gestion et le développement général des projets agricoles.
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Production de maïs de qualité destiné à la consommation humaine et à l'alimentation animale (valorisation intégrée avec notre pôle élevage).
                     </p>
                 </div>
-                <!-- Papa Ndiobo Ndiaye (Technicien) -->
-                <div class="bg-white border border-slate-200/80 rounded-3xl p-8 text-center shadow-sm hover:shadow-md transition">
-                    <div class="w-28 h-28 rounded-full overflow-hidden mx-auto mb-6 shadow-md border-4 border-amber-50 bg-slate-200">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400" alt="Papa Ndiobo Ndiaye" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Carte Gombo -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-md transition">
+                <div class="h-60 overflow-hidden bg-stone-100">
+                    <img src="A5.jpg" alt="Culture de Gombo Dertady Agro Tech" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-stone-900">Gombo Frais</h3>
+                        <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full">Récolte Régulière</span>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900">Papa Ndiobo Ndiaye</h3>
-                    <span class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mt-2">Co-fondateur & Technicien / Opérations</span>
-                    <p class="text-slate-600 text-sm mt-4">
-                        Expert technique sur le terrain, supervise la mise en culture, le suivi agronomique et la qualité des récoltes.
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Variétés sélectionnées pour leur tendreté et leur rendement. Cueillette régulière garantissant une fraîcheur optimale dès la sortie du champ.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carte Pastèque -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-md transition">
+                <div class="h-60 overflow-hidden bg-stone-100">
+                    <img src="images (1).jfif" alt="Culture de Pastèque Dertady Agro Tech" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-stone-900">Pastèque</h3>
+                        <span class="text-xs font-semibold bg-rose-100 text-rose-800 px-2.5 py-1 rounded-full">Fruit de Saison</span>
+                    </div>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Fruits gorgés de sucre et calibrés, cultivés avec une gestion précise de l'irrigation et de la fertilisation organique.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT & FOOTER -->
-    <footer id="contact" class="bg-slate-900 text-slate-300 py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-slate-800 pb-12">
-            <div>
-                <h3 class="text-white text-lg font-bold mb-4">Dertady Agro Tech</h3>
-                <p class="text-sm text-slate-400">
-                    Entreprise agricole innovante menée par Djim Ndiaye et Papa Ndiobo Ndiaye. Qualité et transparence au service de l'agriculture au Sénégal.
+    <!-- Section 2 : Nouveau Pôle Maraîchage & Pépinières -->
+    <section id="maraichage" class="py-20 bg-emerald-50/70 border-y border-emerald-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-emerald-700 font-bold text-sm uppercase tracking-wider">Extension Maraîchère</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-stone-900 mt-2">Pépinières & Légumes de Base</h2>
+                </div>
+                <p class="text-stone-600 max-w-md text-sm">
+                    Sous la supervision technique de <strong>Papa Ndiobo Ndiaye</strong>, nous développons des pépinières maîtrisées et des parcelles dédiées aux légumes essentiels du quotidien.
                 </p>
             </div>
-            <div>
-                <h3 class="text-white text-lg font-bold mb-4">Navigation Rapide</h3>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#accueil" class="hover:text-emerald-400 transition">Accueil</a></li>
-                    <li><a href="#engagements" class="hover:text-emerald-400 transition">Notre Savoir-Faire</a></li>
-                    <li><a href="#produits" class="hover:text-emerald-400 transition">Nos Récoltes</a></li>
-                    <li><a href="#galerie" class="hover:text-emerald-400 transition">Nos Terres</a></li>
-                    <li><a href="#actionnaires" class="hover:text-emerald-400 transition">Fondateurs</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-white text-lg font-bold mb-4">Contact Direct</h3>
-                <p class="text-sm text-slate-400 mb-2">Téléphone / WhatsApp Sénégal :</p>
-                <p class="text-white font-bold text-base mb-4">+221 77 394 91 12</p>
-                <button onclick="openOrderModal('Demande Générale')" class="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-5 py-2.5 rounded-xl transition">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span>Écrire sur WhatsApp</span>
-                </button>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+                <!-- Tomate -->
+                <div class="bg-white p-6 rounded-2xl border border-emerald-100 shadow-sm">
+                    <div class="w-11 h-11 rounded-xl bg-red-100 text-red-600 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900">Tomate</h3>
+                    <p class="text-xs text-emerald-700 font-semibold mt-1">Pépinière & Plein champ</p>
+                    <p class="text-stone-600 text-sm mt-3">Plants vigoureux repiqués avec soin pour des fruits fermes et savoureux.</p>
+                </div>
+
+                <!-- Oignon -->
+                <div class="bg-white p-6 rounded-2xl border border-emerald-100 shadow-sm">
+                    <div class="w-11 h-11 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900">Oignon</h3>
+                    <p class="text-xs text-emerald-700 font-semibold mt-1">Pépinière & Culture</p>
+                    <p class="text-stone-600 text-sm mt-3">Bulbes calibrés à bonne aptitude de conservation pour les marchés locaux.</p>
+                </div>
+
+                <!-- Chou -->
+                <div class="bg-white p-6 rounded-2xl border border-emerald-100 shadow-sm">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900">Chou</h3>
+                    <p class="text-xs text-emerald-700 font-semibold mt-1">Pépinière & Repiquage</p>
+                    <p class="text-stone-600 text-sm mt-3">Pommes denses et saines grâce à un suivi phytosanitaire préventif.</p>
+                </div>
+
+                <!-- Piment -->
+                <div class="bg-white p-6 rounded-2xl border border-emerald-100 shadow-sm">
+                    <div class="w-11 h-11 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-pepper-hot"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900">Piment</h3>
+                    <p class="text-xs text-emerald-700 font-semibold mt-1">Pépinière & Récolte</p>
+                    <p class="text-stone-600 text-sm mt-3">Production continue à fort rendement et haute valeur commerciale.</p>
+                </div>
+
+                <!-- Pomme de terre -->
+                <div class="bg-white p-6 rounded-2xl border border-emerald-100 shadow-sm">
+                    <div class="w-11 h-11 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900">Pomme de terre</h3>
+                    <p class="text-xs text-emerald-700 font-semibold mt-1">Culture de plein champ</p>
+                    <p class="text-stone-600 text-sm mt-3">Préparation soignée des planches et buttage précis pour un calibre optimal.</p>
+                </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
-            <p>&copy; 2026 Dertady Agro Tech. Tous droits réservés.</p>
-            <p>Fondateurs : Djim Ndiaye & Papa Ndiobo Ndiaye</p>
+    </section>
+
+    <!-- Section 3 : Pôle Élevage & Synergie Ferme Intégrée -->
+    <section id="elevage" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-stone-900 text-white rounded-3xl p-8 md:p-14 overflow-hidden relative">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-wider mb-4">
+                        <i class="fa-solid fa-wheat-awn"></i> Modèle Agro-Pastoral
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold leading-tight">
+                        Pôle Élevage & Ferme Intégrée
+                    </h2>
+                    <p class="text-stone-300 mt-4 leading-relaxed">
+                        Pour renforcer notre autonomie et notre rentabilité toute l'année, <strong>Dertady Agro Tech</strong> associe l'élevage (aviculture et embouche) à ses productions végétales dans une logique d'économie circulaire.
+                    </p>
+                    <ul class="mt-6 space-y-3 text-sm text-stone-200">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                            <span><strong>Fertilisant 100 % naturel :</strong> Valorisation du fumier et du compost pour enrichir nos parcelles de maraîchage et de maïs.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                            <span><strong>Alimentation maîtrisée :</strong> Utilisation des résidus de récoltes de maïs et sous-produits agricoles de l'exploitation.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                            <span><strong>Disponibilité annuelle :</strong> Production régulière de volailles et d'animaux d'élevage pour les marchés et événements.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-white/10 border border-white/10 p-6 rounded-2xl">
+                        <i class="fa-solid fa-feather-pointed text-2xl text-amber-400 mb-3"></i>
+                        <h3 class="font-bold text-lg">Aviculture (Volailles)</h3>
+                        <p class="text-stone-300 text-sm mt-2">Élevage suivi avec rigueur sanitaire pour répondre à la demande locale en viande blanche et œufs.</p>
+                    </div>
+                    <div class="bg-white/10 border border-white/10 p-6 rounded-2xl">
+                        <i class="fa-solid fa-cow text-2xl text-emerald-400 mb-3"></i>
+                        <h3 class="font-bold text-lg">Embouche & Bétail</h3>
+                        <p class="text-stone-300 text-sm mt-2">Préparation et suivi nutritionnel adaptés aux besoins du marché sénégalais tout au long de l'année.</p>
+                    </div>
+                    <div class="sm:col-span-2 bg-emerald-800/60 border border-emerald-600/40 p-5 rounded-2xl flex items-center justify-between gap-4">
+                        <div>
+                            <p class="font-bold text-white text-sm">Partenariats & Approvisionnement</p>
+                            <p class="text-emerald-200 text-xs mt-0.5">Commandes groupées pour grossistes, hôtels, restaurants et particuliers.</p>
+                        </div>
+                        <a href="https://wa.me/221773949112" target="_blank" class="shrink-0 bg-white text-emerald-950 font-bold text-xs px-4 py-2.5 rounded-full hover:bg-emerald-50 transition">
+                            Nous écrire
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 : Savoir-Faire & Logistique -->
+    <section id="savoir-faire" class="py-16 bg-white border-t border-stone-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-emerald-700 font-bold text-sm uppercase tracking-wider">Notre Méthode</span>
+                <h2 class="text-3xl font-extrabold text-stone-900 mt-2">Savoir-Faire & Logistique Terrain</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900">Maîtrise de l'Eau & Pépinières</h3>
+                    <p class="text-stone-600 text-sm mt-2 leading-relaxed">
+                        Conduite technique des pépinières (tomate, oignon, chou, piment) avant repiquage pour maximiser le taux de reprise et les rendements à l'hectare.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900">Récolte & Logistique Rapide</h3>
+                    <p class="text-stone-600 text-sm mt-2 leading-relaxed">
+                        Planification des récoltes selon les commandes afin de limiter les pertes post-récolte et garantir des produits frais à la livraison.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900">Équipe Terrain & Recrutement</h3>
+                    <p class="text-stone-600 text-sm mt-2 leading-relaxed">
+                        Développement continu de notre main-d'œuvre agricole locale encadrée sur site pour accompagner l'extension de nos surfaces cultivées.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5 : Direction & Équipe -->
+    <section id="equipe" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+            <span class="text-emerald-700 font-bold text-sm uppercase tracking-wider">Gouvernance</span>
+            <h2 class="text-3xl font-extrabold text-stone-900 mt-2">Les Co-fondateurs</h2>
+            <p class="text-stone-600 mt-2">Une alliance complémentaire entre vision stratégique et maîtrise opérationnelle sur le terrain.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Djim Ndiaye -->
+            <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col sm:flex-row items-center gap-6">
+                <img src="djim.jfif" alt="Djim Ndiaye" class="w-24 h-24 rounded-2xl object-cover shrink-0 border-2 border-emerald-700">
+                <div class="text-center sm:text-left">
+                    <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Co-fondateur & Stratégie</span>
+                    <h3 class="text-xl font-extrabold text-stone-900 mt-1">Djim Ndiaye</h3>
+                    <p class="text-stone-600 text-sm mt-2 leading-relaxed">
+                        Direction stratégique, développement commercial, partenariats et structuration de la croissance de Dertady Agro Tech.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Papa Ndiobo Ndiaye -->
+            <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col sm:flex-row items-center gap-6">
+                <div class="w-24 h-24 rounded-2xl bg-emerald-900 text-white flex items-center justify-center text-3xl font-extrabold shrink-0">
+                    PN
+                </div>
+                <div class="text-center sm:text-left">
+                    <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Co-fondateur & Responsable Technique</span>
+                    <h3 class="text-xl font-extrabold text-stone-900 mt-1">Papa Ndiobo Ndiaye</h3>
+                    <p class="text-stone-600 text-sm mt-2 leading-relaxed">
+                        Supervision directe de l'exploitation : conduite des pépinières, suivi agronomique des cultures, élevage et encadrement des équipes terrain.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-emerald-950 text-emerald-100 py-12 border-t border-emerald-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <p class="font-extrabold text-white text-lg">Dertady Agro Tech</p>
+                <p class="text-sm text-emerald-300/80 mt-1">Agriculture Moderne, Maraîchage & Élevage — Sénégal</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center gap-4 text-sm">
+                <a href="tel:+221773949112" class="hover:text-white transition">
+                    <i class="fa-solid fa-phone mr-2"></i>+221 77 394 91 12
+                </a>
+                <span class="hidden sm:inline text-emerald-700">|</span>
+                <a href="https://wa.me/221773949112?text=Bonjour%20Dertady%20Agro%20Tech,%20je%20souhaite%20postuler%20ou%20proposer%20mes%20services%20sur%20l'exploitation." target="_blank" class="text-amber-400 hover:text-amber-300 font-semibold transition">
+                    Recrutement / Rejoindre l'équipe terrain
+                </a>
+            </div>
         </div>
     </footer>
 
-    <!-- BOUTON WHATSAPP FLOTTANT EN BAS À DROITE -->
-    <button onclick="openOrderModal('Contact Direct depuis le site')" aria-label="Contacter sur WhatsApp" class="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white w-14 h-14 rounded-full shadow-2xl shadow-emerald-600/40 flex items-center justify-center text-3xl transition-transform hover:scale-110">
+    <!-- Bouton Flottant WhatsApp -->
+    <a href="https://wa.me/221773949112?text=Bonjour%20Dertady%20Agro%20Tech,%20je%20vous%20contacte%20depuis%20votre%20site%20web." 
+       target="_blank" 
+       aria-label="Contacter sur WhatsApp"
+       class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-xl flex items-center justify-center text-3xl transition transform hover:scale-110">
         <i class="fa-brands fa-whatsapp"></i>
-    </button>
+    </a>
 
-    <!-- MODAL COMMANDE WHATSAPP -->
-    <div id="orderModal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative">
-            <button onclick="closeOrderModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-700">
-                <i class="fa-solid fa-xmark text-xl"></i>
-            </button>
-            <h3 class="text-2xl font-bold text-slate-900 mb-2">Contactez-nous</h3>
-            <p class="text-sm text-slate-600 mb-6">Remplissez ce formulaire pour envoyer votre demande directement sur notre WhatsApp (+221 77 394 91 12).</p>
-            
-            <form id="whatsappForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Objet / Produit concerné</label>
-                    <input type="text" id="productName" readonly class="w-full bg-slate-100 border border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold text-slate-800">
-                </div>
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Votre Nom / Entreprise</label>
-                    <input type="text" id="clientName" required placeholder="Ex: Moussa Diop" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:border-emerald-600">
-                </div>
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Quantité souhaitée / Message</label>
-                    <textarea id="clientMessage" rows="3" required placeholder="Ex: Je souhaite commander..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:border-emerald-600"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl transition flex items-center justify-center space-x-2 shadow-lg shadow-emerald-600/30">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>Envoyer sur WhatsApp</span>
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <!-- SCRIPT JAVASCRIPT INTÉGRÉ -->
-    <script>
-        function openOrderModal(product) {
-            document.getElementById('productName').value = product;
-            document.getElementById('orderModal').classList.remove('hidden');
-        }
-        function closeOrderModal() {
-            document.getElementById('orderModal').classList.add('hidden');
-        }
-        function sendToWhatsApp(e) {
-            e.preventDefault();
-            const product = document.getElementById('productName').value;
-            const name = document.getElementById('clientName').value;
-            const msg = document.getElementById('clientMessage').value;
-            
-            // Numéro WhatsApp du Sénégal (+221 77 394 91 12)
-            const phoneNumber = "221773949112";
-            
-            const text = `Bonjour Dertady Agro Tech,%0AJe m'appelle *${name}*.%0AObjet : *${product}*.%0ADétails : ${msg}`;
-            
-            window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
-            closeOrderModal();
-        }
-    </script>
 </body>
 </html>
